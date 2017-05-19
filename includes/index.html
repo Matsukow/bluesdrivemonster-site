@@ -1,0 +1,164 @@
+<head>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> -->
+
+  <style type="text/css">
+
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('OpenSans-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Roboto';
+      src: url('Roboto-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      /*font-family: 'Roboto', sans-serif;*/
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 10em 0;
+    }
+
+    header {
+      /* font-size: 20em; */
+      font-size: 18vw;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    svg {
+      font-weight: 800;
+      width: 100%;
+      height: 100%;
+      position:absolute;
+    }
+
+    svg mask rect {
+      fill: rgba(255, 255, 255, 0.4);
+    }
+
+    svg > rect {
+      fill: white;
+      -webkit-mask: url(#mask);
+      mask: url(#mask);
+    }
+
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .no-svg-header {
+      display: none;
+    }
+
+    .single{
+      background: linear-gradient(
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.3));
+      position: absolute;
+      /*left: 65%;*/
+      bottom: 50%;
+      left: 65vw;
+      /*top: 2vw;*/
+      border: 1px solid #ccc;      
+    }
+
+    .single .single-titulo{
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 1vw;
+      color: #fff;
+      position: absolute;
+      float: left;
+      bottom: 12%;
+    }
+
+    .single .data{
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 1vw;
+      position: absolute;
+      float: left;
+      bottom: 6%;
+    }
+
+    #img-capa{
+      width: 17vw;
+      height: 15vw;
+     /* width: 300px;
+      height: 300px;*/
+      padding-bottom: 30%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        header{
+          font-size: 19.5vw;
+        }
+        .single{
+          left: 68vw;
+          bottom: 60%;
+          /*top: 30vw;*/
+        }
+        #img-capa{
+          /*width: 30vw;
+          height: 30vw;*/
+          /*padding-bottom: 65px;*/
+        }                                                                    
+    }
+
+  </style>
+
+</head>
+
+<header class="svg-header">      
+    <div class="single">
+      <img src="capa.jpg" id="img-capa" />
+      <span class="single-titulo">NOVO SINGLE - VOTOS DE LUZ</span>
+      <span class="data">01.05.2017</span>
+    </div>
+  <svg>
+    BLUES DRIVE
+    <mask id="mask">
+      <rect width="100%" height="100%"/>
+        <text>        
+        <tspan x="0" y="30%">BLUES</tspan>
+        <tspan x="0" dy="0.8em">DRIVE</tspan>
+        <tspan x="0" dy="0.8em">DRAGONS</tspan>
+      </text>
+    </mask>
+    <rect width="100%" height="100%"/>
+  </svg>
+
+  <video style="background: #000;" id="video_target" src="teaser - versao final2.mp4" autoplay loop></video>
+
+  <!-- <div class="single">
+    <img src="capa.jpg" id="img-capa" />
+  </div> -->
+</header>
+
+<header class="no-svg-header">
+  <h1>BLUES DRIVE</h1>
+</header>
+
+</div>
